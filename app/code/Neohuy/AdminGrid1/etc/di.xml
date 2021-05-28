@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="O">
+    <type name="Neohuy\AdminGrid1\Ui\DataProvider\Category\ListingDataProvider">
+        <plugin name="neohuy_admingrid1_attributes" type="Neohuy\AdminGrid1\Plugin\AddAttributesToUiDataProvider"/>
+    </type>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="neohuy_admingrid1_category_listing_data_source" xsi:type="string">NeohuyAdminGrid1CategoryCollection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="NeohuyAdminGrid1CategoryCollection" type="Neohuy\AdminGrid1\Ui\DataProvider\Category\Listing\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">catalog_category_entity</argument>
+            <argument name="resourceModel" xsi:type="string">Neohuy\AdminGrid1\Model\ResourceModel\Category</argument>
+        </arguments>
+    </virtualType>
+</config>
