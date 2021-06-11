@@ -264,6 +264,7 @@ return [
         'Mageplaza_Core' => 1,
         'Mageplaza_Smtp' => 1,
         'Neohuy_AdminGrid1' => 1,
+        'Neohuy_Voucher' => 1,
         'Temando_ShippingRemover' => 1,
         'Vertex_Tax' => 1,
         'Vertex_AddressValidation' => 1,

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Catalog/etc/product_types.xsd">
+    <type name="voucher" label="Voucher Product" modelInstance="Neohuy\Voucher\Model\Product\Type\Voucher" isQty="true">
+        <priceModel instance="Neohuy\Voucher\Model\Product\Price" />
+    </type>
+</config>
